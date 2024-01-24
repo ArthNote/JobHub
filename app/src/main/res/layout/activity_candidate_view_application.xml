@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Candidates.CandidateViewApplication"
+    android:background="@color/new_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="70dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/textvieew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Application Info"
+                android:textColor="@color/black_new"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/candidateappview_company"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/company_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Company Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@id/textvieew"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="@id/textvieew"
+                app:layout_constraintTop_toBottomOf="@+id/textvieew"
+                tools:ignore="NotSibling" />
+
+            <EditText
+                android:id="@+id/candidateappview_position"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/position_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Position"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@id/candidateappview_company"
+                app:layout_constraintStart_toStartOf="@id/candidateappview_company"
+                app:layout_constraintTop_toBottomOf="@+id/candidateappview_company" />
+
+            <EditText
+                android:id="@+id/candidateappview_date"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/date_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Date Applied"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@id/candidateappview_position"
+                app:layout_constraintStart_toStartOf="@id/candidateappview_position"
+                app:layout_constraintTop_toBottomOf="@+id/candidateappview_position" />
+
+            <Button
+                android:id="@+id/candidateappview_delete_btn1"
+                android:layout_width="350dp"
+                android:layout_height="53dp"
+                android:background="@drawable/button_red"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="REMOVE APPLICATION"
+                tools:layout_editor_absoluteY="1014dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@id/candidateappview_date"
+                app:layout_constraintStart_toStartOf="@id/candidateappview_date"
+                app:layout_constraintTop_toBottomOf="@+id/candidateappview_date"/>
+
+
+            <Button
+                android:id="@+id/candidateappview_viewjob_btn1"
+                android:layout_width="350dp"
+                android:layout_height="53dp"
+                android:background="@drawable/button_border"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="VIEW JOB"
+                tools:layout_editor_absoluteY="1014dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@id/candidateappview_delete_btn1"
+                app:layout_constraintStart_toStartOf="@id/candidateappview_delete_btn1"
+                app:layout_constraintTop_toBottomOf="@+id/candidateappview_delete_btn1"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

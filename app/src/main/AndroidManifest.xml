@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JobHub"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.CandidateChat"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.RecruiterChat"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.CandidateMessages"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.EditRecruiterProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.EditCandidateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.CandidateViewApplication"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.CandidateJobView"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.EditDeleteJob"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.AddJob"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.CandidateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.RecruiterMessages"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.RecruiterCandidats"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.RecruiterProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.RecruiterJobs"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.RecruiterSearch"
+            android:exported="false" />
+        <activity
+            android:name=".Recruiters.RecruiterViewJobApplicants"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.History"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.UserSearch"
+            android:exported="false" />
+        <activity
+            android:name=".Candidates.UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

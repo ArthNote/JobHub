@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recruiters.EditRecruiterProfile"
+    android:background="@color/new_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:paddingBottom="150dp">
+
+
+            <EditText
+                android:id="@+id/editrecruiterprofile_fname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/person_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/textviee"
+                app:layout_constraintStart_toStartOf="@+id/textviee"
+                app:layout_constraintTop_toBottomOf="@+id/textviee" />
+
+            <TextView
+                android:id="@+id/textviee"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Profile Info"
+                android:textColor="@color/black_new"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editrecruiterprofile_lname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/person_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editrecruiterprofile_fname"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/editrecruiterprofile_fname"
+                app:layout_constraintTop_toBottomOf="@+id/editrecruiterprofile_fname" />
+
+
+
+
+            <RadioGroup
+                android:id="@+id/editrecruiterprofile_gender"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/editrecruiterprofile_lname"
+                app:layout_constraintStart_toStartOf="@+id/editrecruiterprofile_lname"
+                app:layout_constraintTop_toBottomOf="@+id/editrecruiterprofile_lname">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editrecruiterprofile_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingVertical="20dp"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:text="Male" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editrecruiterprofile_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingVertical="20dp"
+                    android:text="Female"   />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editrecruiterprofile_phone"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/phone_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editrecruiterprofile_gender"
+                app:layout_constraintStart_toStartOf="@+id/editrecruiterprofile_gender"
+                app:layout_constraintTop_toBottomOf="@+id/editrecruiterprofile_gender" />
+
+            <EditText
+                android:id="@+id/editrecruiterprofile_about"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/info_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="About me"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editrecruiterprofile_phone"
+                app:layout_constraintStart_toStartOf="@+id/editrecruiterprofile_phone"
+                app:layout_constraintTop_toBottomOf="@+id/editrecruiterprofile_phone" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#ECECEC"
+        android:gravity="center_horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/editrecruiterprofile_save_btn"
+            android:layout_width="350dp"
+            android:layout_height="53dp"
+            android:background="@drawable/button_border"
+            android:elevation="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="SAVE" />
+    </LinearLayout>
+
+
+    <include layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

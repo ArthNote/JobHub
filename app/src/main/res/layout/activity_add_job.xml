@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recruiters.AddJob"
+    android:background="@color/new_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:paddingTop="70dp">
+
+            <TextView
+                android:id="@+id/textvieew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Job Info"
+                android:textColor="@color/black_new"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/addjob_cname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/company_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Company Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@id/textvieew"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="@id/textvieew"
+                app:layout_constraintTop_toBottomOf="@+id/textvieew"
+                tools:ignore="NotSibling" />
+
+            <EditText
+                android:id="@+id/addjob_jname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/work_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_cname"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/addjob_cname"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_cname" />
+
+            <EditText
+                android:id="@+id/addjob_sdate"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/date_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Start Date"
+                android:inputType="date"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_jname"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/addjob_jname"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_jname" />
+
+            <EditText
+                android:id="@+id/addjob_desc"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/info_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Description"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_sdate"
+                app:layout_constraintStart_toStartOf="@+id/addjob_sdate"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_sdate" />
+
+            <EditText
+                android:id="@+id/addjob_position"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/position_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Position"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_desc"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/addjob_desc"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_desc" />
+
+            <EditText
+                android:id="@+id/addjob_no_vacancy"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/number_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="No. of Vacancy's"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_position"
+                app:layout_constraintStart_toStartOf="@+id/addjob_position"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_position"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/addjob_category"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/category_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Category"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_no_vacancy"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/addjob_no_vacancy"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_no_vacancy" />
+
+            <EditText
+                android:id="@+id/addjob_min_exp"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/number_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Min Experience (in years)"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_category"
+                app:layout_constraintStart_toStartOf="@+id/addjob_category"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_category"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/addjob_max_exp"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/number_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Max Experience (in years)"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_min_exp"
+                app:layout_constraintStart_toStartOf="@+id/addjob_min_exp"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_min_exp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/addjob_grad"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/percent_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Graduation Pecentage"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_max_exp"
+                app:layout_constraintStart_toStartOf="@+id/addjob_max_exp"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_max_exp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/addjob_pgrad"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/percent_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Post Graduation Pecentage"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_grad"
+                app:layout_constraintStart_toStartOf="@+id/addjob_grad"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_grad"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/addjob_specs"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/specializatio_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Specialization"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_pgrad"
+                app:layout_constraintStart_toStartOf="@+id/addjob_pgrad"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_pgrad"/>
+
+            <EditText
+                android:id="@+id/addjob_skills"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/skills_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Skills"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_specs"
+                app:layout_constraintStart_toStartOf="@+id/addjob_specs"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_specs"/>
+
+            <EditText
+                android:id="@+id/addjob_min_pay"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/payment_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Min Pay"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_worktime_group"
+                app:layout_constraintStart_toStartOf="@+id/addjob_worktime_group"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_worktime_group"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/addjob_location"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/location_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Location (City/Country)"
+                android:inputType="text"
+                android:minHeight="64dp"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_max_pay"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/addjob_max_pay"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_max_pay" />
+
+            <EditText
+                android:id="@+id/addjob_max_pay"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/payment_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Max Pay"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_min_pay"
+                app:layout_constraintStart_toStartOf="@+id/addjob_min_pay"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_min_pay"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:id="@+id/addjob_worktype_group"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_location"
+                app:layout_constraintStart_toStartOf="@+id/addjob_location"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_location">
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:id="@+id/addjob_worktype_site"
+                    android:layout_width="0dp"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:layout_weight="1"
+                    android:text="On Site"
+                    android:paddingVertical="22dp"
+                    android:gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:id="@+id/addjob_worktype_remote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_btn_selector"
+                    android:text="Remote"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:id="@+id/addjob_worktype_hybrid"
+                    android:layout_width="0dp"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:button="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hybrid"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"/>
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/addjob_worktime_group"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_skills"
+                app:layout_constraintStart_toStartOf="@+id/addjob_skills"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_skills"
+                android:elevation="300dp">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:id="@+id/addjob_worktime_full"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Full Time"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:id="@+id/addjob_worktime_part"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Part Time"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:id="@+id/addjob_worktime_free"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Freelance"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:id="@+id/addjob_worktime_con"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Contract"
+                    android:paddingVertical="22dp"
+                    android:gravity="center" />
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/addjob_resp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/resp_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Responsibilities"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_worktype_group"
+                app:layout_constraintStart_toStartOf="@+id/addjob_worktype_group"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_worktype_group"/>
+            <Button
+                android:id="@+id/addjob_add_btn"
+                android:layout_width="350dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_border"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="ADD JOB"
+                app:layout_constraintEnd_toEndOf="@+id/addjob_resp"
+                app:layout_constraintStart_toStartOf="@+id/addjob_resp"
+                app:layout_constraintTop_toBottomOf="@+id/addjob_resp" />
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

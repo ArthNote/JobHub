@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/searchbar_shape</item>
+        <item name="searchIcon"> @drawable/search_ic</item>
+        <!-- Add other customizations as needed -->
+    </style> <!--com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="bar">
+        <item name="android:progressTint">@color/light_blue</item>
+        <item name="android:progressBackgroundTint">@color/light_blue</item>
+    </style>
+
+</resources>

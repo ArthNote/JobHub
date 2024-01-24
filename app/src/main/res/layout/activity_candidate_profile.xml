@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recruiters.CandidateProfile"
+    android:background="@color/new_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="120dp"
+                    android:id="@+id/profile_pic"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    app:shapeAppearanceOverlay="@style/Circular"
+                    app:srcCompat="@drawable/employee"
+                    app:strokeColor="@color/dark_blue"
+                    app:strokeWidth="2dp" />
+
+                <TextView
+                    android:id="@+id/candidateprofile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="Yassine Moussaid"
+                    android:textColor="@color/black_new"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/candidateprofile_specs_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Software Engineer • Male"
+                    android:textColor="#7E7E7E"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/candidateprofile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="moussaidyassine@gmail.com"
+                    android:textColor="#7E7E7E"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/rec_can_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/light_blue"
+                    android:progressBackgroundTint="@color/grey"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/candidateprofile_about_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/field_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingHorizontal="10dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/notcollapsed_arrow_ic"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="About Me"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidateprofile_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:paddingVertical="5dp"
+                        android:paddingTop="8dp"
+                        android:text="Dans les textes non linéaires, généralement tabulaires, il est difficile de parler de paragraphes : la page est composée de tables ou de tableaux, de graphes et d'histogrammes"
+                        android:textColor="@color/black_new"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:elevation="4dp"
+                    android:id="@+id/candidateprofile_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/field_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingHorizontal="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/notcollapsed_arrow_ic"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Details"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/candidateprofile_details_expand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="10dp">
+
+                            <TextView
+                                android:id="@+id/candidateprofile_exp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/profile_border"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="8dp"
+                                android:text="5 years experience"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/candidateprofile_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/profile_border"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="8dp"
+                                android:text="0684888328"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="10dp">
+
+                            <TextView
+                                android:id="@+id/candidateprofile_grad"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/profile_border"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="8dp"
+                                android:text="72% Graduation"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/candidateprofile_pgrad"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/profile_border"
+                                android:fontFamily="@font/poppins_regular"
+                                android:gravity="center"
+                                android:paddingHorizontal="15dp"
+                                android:paddingVertical="8dp"
+                                android:text="72% Post Graduation"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:elevation="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/candidateprofile_skills_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/field_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingHorizontal="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/notcollapsed_arrow_ic"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Skills"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidateprofile_skills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:paddingVertical="5dp"
+                        android:paddingTop="8dp"
+                        android:text="Dans les textes non linéaires, généralement tabulaires, il est difficile de parler de paragraphes : la page est composée de tables ou de tableaux, de graphes et d'histogrammes"
+                        android:textColor="@color/black_new"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/candidateprofile_pdf"
+                    android:layout_width="360dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/bookmark_shape"
+                    android:elevation="4dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="DOWNLOAD PDF"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/candidateprofile_message_btn"
+            android:layout_width="360dp"
+            android:layout_height="53dp"
+            android:background="@drawable/button_border"
+            android:elevation="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="MESSAGE" />
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#28BF8B"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2" />-->
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

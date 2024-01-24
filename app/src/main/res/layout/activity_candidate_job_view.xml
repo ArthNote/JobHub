@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Candidates.CandidateJobView"
+    android:background="@color/new_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="70dp"
+            android:paddingBottom="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:id="@+id/candidatejobview_jname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="Sofware Engineer"
+                    android:textColor="@color/black_new"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/candidatejobview_cname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Microsoft"
+                            android:textColor="@color/black_new"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text=" • "
+                            android:textColor="@color/black_new"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/candidatejobview_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Casablanca"
+                            android:textColor="@color/black_new"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/job_thingy_box"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="5dp"
+                        android:layout_marginHorizontal="5dp">
+                        <TextView
+                            android:id="@+id/candidatejobview_worktime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Full Time"
+                            android:textColor="@color/black_new"
+                            android:fontFamily="@font/poppins_regular"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/job_thingy_box"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="5dp"
+                        android:layout_marginHorizontal="5dp">
+                        <TextView
+                            android:id="@+id/candidatejobview_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black_new"
+                            android:text="Programing"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/job_thingy_box"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="5dp"
+                        android:layout_marginHorizontal="5dp">
+                        <TextView
+                            android:id="@+id/candidatejobview_worktype"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black_new"
+                            android:text="Remote"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginVertical="5dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/job_thingy_box"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="5dp"
+                        android:layout_marginHorizontal="5dp">
+                        <TextView
+                            android:id="@+id/candidatejobview_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black_new"
+                            android:text="$50-$60k"
+                            android:fontFamily="@font/poppins_regular"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/job_thingy_box"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="5dp"
+                        android:layout_marginHorizontal="5dp">
+                        <TextView
+                            android:id="@+id/candidatejobview_exp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black_new"
+                            android:text="2-3 Years"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:elevation="4dp"
+                    android:id="@+id/candidatejobview_desc_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/field_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingHorizontal="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/notcollapsed_arrow_ic"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Job Details"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidatejobview_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:paddingVertical="5dp"
+                        android:paddingTop="8dp"
+                        android:text="Dans les textes non linéaires, généralement tabulaires, il est difficile de parler de paragraphes : la page est composée de tables ou de tableaux, de graphes et d'histogrammes"
+                        android:textColor="@color/black_new"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:elevation="4dp"
+                    android:id="@+id/candidatejobview_resp_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/field_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingHorizontal="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/notcollapsed_arrow_ic"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Responsibilities"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidatejobview_resp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:paddingVertical="5dp"
+                        android:paddingTop="8dp"
+                        android:text="Dans les textes non linéaires, généralement tabulaires, il est difficile de parler de paragraphes : la page est composée de tables ou de tableaux, de graphes et d'histogrammes"
+                        android:textColor="@color/black_new"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:elevation="4dp"
+                    android:id="@+id/candidatejobview_req_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/field_shape"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/notcollapsed_arrow_ic"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Requirements"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/candidatejobview_req_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:text="Specialization: "
+                                android:textColor="@color/black_new"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                            <TextView
+                                android:id="@+id/candidatejobview_specs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="5dp"
+                                android:paddingTop="8dp"
+                                android:text="Software Engineering"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:text="Graduation Percentage: "
+                                android:textColor="@color/black_new"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                            <TextView
+                                android:id="@+id/candidatejobview_grad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="5dp"
+                                android:paddingTop="8dp"
+                                android:text="72%"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:text="Post Graduation Percentage: "
+                                android:textColor="@color/black_new"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                            <TextView
+                                android:id="@+id/candidatejobview_pgrad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="5dp"
+                                android:paddingTop="8dp"
+                                android:text="72%"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:text="No. of vacancy's: "
+                                android:textColor="@color/black_new"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                            <TextView
+                                android:id="@+id/candidatejobview_no_vacancy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:paddingVertical="5dp"
+                                android:paddingHorizontal="5dp"
+                                android:paddingTop="8dp"
+                                android:text="14 days"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:text="Start Date: "
+                                android:textColor="@color/black_new"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                            <TextView
+                                android:id="@+id/candidatejobview_sdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:text="13-03-2024"
+                                android:paddingHorizontal="5dp"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:text="Skills: "
+                                android:textColor="@color/black_new"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                            <TextView
+                                android:id="@+id/candidatejobview_skills"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:paddingVertical="5dp"
+                                android:paddingTop="8dp"
+                                android:paddingHorizontal="5dp"
+                                android:text=" sjhdjahdbj \n jnsdjndksndks \n jandjansdjasd \n jnjdkadkjnasd"
+                                android:textColor="@color/black_new"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/candidatejobview_apply_btn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="4"
+            android:background="@drawable/button_border"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="APPLY TO JOB"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/bookmark_btn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/bookmark_shape"
+            android:elevation="4dp"
+            android:orientation="horizontal"
+            android:src="@drawable/bookmark_border_ic"/>
+
+    </LinearLayout>
+
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

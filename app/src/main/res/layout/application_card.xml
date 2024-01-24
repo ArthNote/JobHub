@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/applications_row_linearlayout"
+    android:layout_marginHorizontal="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minWidth="40dp"
+                    android:minHeight="40dp"
+                    android:src="@drawable/appli"
+                    android:layout_marginLeft="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/applications_row_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sofware Engineer"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/applications_row_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Microsoft"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="14sp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/applications_row_pdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Applied Today"
+                            android:textColor="@color/light_blue"
+                            android:textSize="14sp"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:paddingRight="10dp"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_btn_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/candidateappview_viewjob_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:text="view job"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/candidateappview_delete_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_red"
+                    android:text="remove"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/app_rbtn_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="10dp">
+
+                <Button
+                android:id="@+id/recruiterappview_accept_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:text="view job"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/recruiterappview_delete_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_red"
+                    android:text="remove"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/recruiterappview_viewjob_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_border"
+                    android:text="view job"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/recruiterappview_delete_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_red"
+                    android:text="remove"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>-->
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

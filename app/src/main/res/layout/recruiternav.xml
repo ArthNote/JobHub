@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#28BF8B"
+        app:layout_constraintBottom_toTopOf="@id/bottmnav"
+        app:layout_constraintEnd_toEndOf="parent" />-->
+
+    <LinearLayout
+        android:id="@+id/bottmnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_bg"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/recruiterbar_jobs"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/work_alt_svgrepo_com"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/recruiterbar_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/search_ic"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/recruiterbar_appliers"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/people_svgrepo"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/recruiterbar_messages"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/messages_outline"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/recruiterbar_profile"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/person_male_svgrepo_com"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

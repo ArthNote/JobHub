@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Candidates.EditCandidateProfile"
+    android:background="@color/new_bg">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:paddingTop="60dp">
+
+
+            <EditText
+                android:id="@+id/edituserprofile_fname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/person_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/textviee"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="@+id/textviee"
+                app:layout_constraintTop_toBottomOf="@+id/textviee" />
+
+
+            <TextView
+                android:id="@+id/textviee"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Personal Information"
+                android:textColor="@color/black_new"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edituserprofile_lname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/person_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_fname"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_fname"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_fname" />
+
+            <RadioGroup
+                android:id="@+id/edituserprofile_gender"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_lname"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_lname"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_lname">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/edituserprofile_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingVertical="20dp"
+                    android:text="Male" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/edituserprofile_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingVertical="20dp"
+                    android:text="Female"  />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edituserprofile_phone"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/phone_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_gender"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_gender"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_gender" />
+
+            <EditText
+                android:id="@+id/edituserprofile_about"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/info_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="About me"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_phone"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_phone"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_phone" />
+
+            <TextView
+                android:id="@+id/textvieee"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Candidate Details"
+                android:textColor="@color/black_new"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="@id/edituserprofile_about"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="@id/edituserprofile_about"
+                app:layout_constraintTop_toBottomOf="@id/edituserprofile_about" />
+
+            <EditText
+                android:id="@+id/edituserprofile_grad_percent"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/percent_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Graduation Percentage"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/textvieee"
+                app:layout_constraintStart_toStartOf="@+id/textvieee"
+                app:layout_constraintTop_toBottomOf="@+id/textvieee"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edituserprofile_post_grad_percent"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/percent_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Post Graduation Percentage"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_grad_percent"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_grad_percent"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_grad_percent" />
+
+            <EditText
+                android:id="@+id/edituserprofile_work_exp"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/work_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Work Experience (in years)"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_post_grad_percent"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_post_grad_percent"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_post_grad_percent" />
+
+            <EditText
+                android:id="@+id/edituserprofile_specialization"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/specializatio_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Specialization"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_work_exp"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_work_exp"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_work_exp"/>
+
+            <EditText
+                android:id="@+id/edituserprofile_skills"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/skills_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Skills"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_specialization"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_specialization"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_specialization"/>
+
+            <EditText
+                android:id="@+id/edituserprofile_pdfname"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/pdfname_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Enter PDF File Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_skills"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_skills"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_skills"/>
+            <Button
+                android:id="@+id/edituserprofile_upload"
+                android:layout_width="350dp"
+                android:layout_height="53dp"
+                android:background="@drawable/bookmark_shape"
+                android:elevation="4dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="UPLOAD PDF"
+                app:layout_constraintEnd_toEndOf="@+id/edituserprofile_pdfname"
+                app:layout_constraintStart_toStartOf="@+id/edituserprofile_pdfname"
+                app:layout_constraintTop_toBottomOf="@+id/edituserprofile_pdfname"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#ECECEC"
+        android:gravity="center_horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/edituserprofile_save_btn"
+            android:layout_width="350dp"
+            android:layout_height="53dp"
+            android:background="@drawable/button_border"
+            android:elevation="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="SAVE" />
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/lay"
+        android:background="#28BF8B" />-->
+
+    <include layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

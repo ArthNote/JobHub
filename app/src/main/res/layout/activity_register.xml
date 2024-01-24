@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_bg"
+    tools:context=".Register">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/chihaja">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:paddingTop="70dp"
+            >
+
+            <EditText
+                android:id="@+id/register_fname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/person_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/imageView1"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="@+id/imageView1"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="141dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="130dp"
+                android:src="@drawable/newlogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/include1"
+                tools:ignore="NotSibling" />
+
+            <EditText
+                android:id="@+id/register_lname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/person_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/register_fname"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/register_fname"
+                app:layout_constraintTop_toBottomOf="@+id/register_fname" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/email_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/register_gender"
+                app:layout_constraintStart_toStartOf="@+id/register_gender"
+                app:layout_constraintTop_toBottomOf="@+id/register_gender" />
+
+
+            <RadioGroup
+                android:id="@+id/register_gender"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/register_lname"
+                app:layout_constraintStart_toStartOf="@+id/register_lname"
+                app:layout_constraintTop_toBottomOf="@+id/register_lname">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/register_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingVertical="20dp"
+                    android:text="Male" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/register_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:paddingVertical="20dp"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/lock_closed_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/register_phone"
+                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintStart_toStartOf="@+id/register_phone"
+                app:layout_constraintTop_toBottomOf="@+id/register_phone" />
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="350dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_border"
+                android:elevation="4dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="REGISTER"
+                app:layout_constraintEnd_toEndOf="@+id/register_type"
+                app:layout_constraintStart_toStartOf="@+id/register_type"
+                app:layout_constraintTop_toBottomOf="@+id/register_type" />
+
+            <RadioGroup
+                android:id="@+id/register_type"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/register_about"
+                app:layout_constraintStart_toStartOf="@+id/register_about"
+                app:layout_constraintTop_toBottomOf="@+id/register_about">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/register_recruiter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:text="Recruiter"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:button="@android:color/transparent"
+                    android:layout_marginRight="-1dp"
+                    android:gravity="center"
+                    android:paddingVertical="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/register_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Candidate"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_marginLeft="-1dp"
+                    android:gravity="center"
+                    android:paddingVertical="20dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/register_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Already have an account? Login"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/register_btn"
+                app:layout_constraintStart_toStartOf="@+id/register_btn"
+                app:layout_constraintTop_toBottomOf="@+id/register_btn" />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/phone_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/register_email"
+                app:layout_constraintStart_toStartOf="@+id/register_email"
+                app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+            <EditText
+                android:id="@+id/register_about"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/info_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="About me"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/register_password"
+                app:layout_constraintStart_toStartOf="@+id/register_password"
+                app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

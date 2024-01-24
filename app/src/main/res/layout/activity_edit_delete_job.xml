@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recruiters.EditDeleteJob"
+    android:background="@color/new_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:paddingTop="70dp">
+
+            <TextView
+                android:id="@+id/textvieew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Job Info"
+                android:textColor="@color/black_new"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editdeletejob_cname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/company_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Company Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@id/textvieew"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="@id/textvieew"
+                app:layout_constraintTop_toBottomOf="@+id/textvieew"
+                tools:ignore="NotSibling" />
+
+            <EditText
+                android:id="@+id/editdeletejob_jname"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/work_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Name"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_cname"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_cname"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_cname" />
+
+            <EditText
+                android:id="@+id/editdeletejob_sdate"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/date_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Start Date"
+                android:inputType="date"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_jname"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_jname"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_jname" />
+
+            <EditText
+                android:id="@+id/editdeletejob_desc"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/info_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Description"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_sdate"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_sdate"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_sdate" />
+
+            <EditText
+                android:id="@+id/editdeletejob_position"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/position_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Position"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_desc"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_desc"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_desc" />
+
+            <EditText
+                android:id="@+id/editdeletejob_no_vacancy"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/number_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="No. of Vacancy's"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_position"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_position"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_position"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editdeletejob_category"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/category_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Job Category"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_no_vacancy"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_no_vacancy"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_no_vacancy" />
+
+            <EditText
+                android:id="@+id/editdeletejob_min_exp"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/number_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Min Experience (in years)"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_category"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_category"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_category"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editdeletejob_max_exp"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/number_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Max Experience (in years)"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_min_exp"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_min_exp"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_min_exp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editdeletejob_grad"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/percent_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Graduation Pecentage"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_max_exp"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_max_exp"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_max_exp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editdeletejob_pgrad"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/percent_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Post Graduation Pecentage"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_grad"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_grad"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_grad"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editdeletejob_specs"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/specializatio_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Specialization"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_pgrad"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_pgrad"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_pgrad"/>
+
+            <EditText
+                android:id="@+id/editdeletejob_skills"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/skills_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Skills"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_specs"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_specs"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_specs"/>
+
+            <EditText
+                android:id="@+id/editdeletejob_min_pay"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/payment_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Min Pay"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_worktime_group"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_worktime_group"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_worktime_group"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editdeletejob_max_pay"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/payment_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Max Pay"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_min_pay"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_min_pay"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_min_pay"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editdeletejob_location"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/location_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Location (City/Country)"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_max_pay"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_max_pay"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_max_pay"/>
+
+            <RadioGroup
+                android:id="@+id/editdeletejob_worktype_group"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_location"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_location"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_location">
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editdeletejob_site"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_width="0dp"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:layout_weight="1"
+                    android:text="On Site"
+                    android:paddingVertical="22dp"
+                    android:gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editdeletejob_remote"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:background="@drawable/radio_btn_selector"
+                    android:text="Remote"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editdeletejob_hybrid"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_width="0dp"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:button="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hybrid"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"/>
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/editdeletejob_worktime_group"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_skills"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_skills"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_skills">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editdeletejob_full"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_left_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Full Time"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editdeletejob_part"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Part Time"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editdeletejob_free"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Freelance"
+                    android:paddingVertical="22dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/editdeletejob_con"
+                    android:textColor="@drawable/radio_btn_txtcolor_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_right_selector"
+                    android:button="@android:color/transparent"
+                    android:text="Contract"
+                    android:paddingVertical="22dp"
+                    android:gravity="center" />
+
+            </RadioGroup>
+            <EditText
+                android:id="@+id/editdeletejob_resp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/field_shape"
+                android:drawableEnd="@drawable/resp_ic"
+                android:elevation="4dp"
+                android:ems="10"
+                android:hint="Responsibilities"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black_new"
+                app:layout_constraintEnd_toEndOf="@+id/editdeletejob_worktype_group"
+                app:layout_constraintStart_toStartOf="@+id/editdeletejob_worktype_group"
+                app:layout_constraintTop_toBottomOf="@+id/editdeletejob_worktype_group"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECECEC"
+        android:paddingHorizontal="32dp"
+        android:gravity="center_horizontal"
+        android:paddingVertical="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/editdeletejob_edit_btn"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_border"
+            android:elevation="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="UPDATE JOB"
+            app:layout_constraintEnd_toEndOf="@+id/editdeletejob_resp"
+            app:layout_constraintStart_toStartOf="@+id/editdeletejob_resp"
+            app:layout_constraintTop_toBottomOf="@+id/editdeletejob_resp" />
+
+        <Button
+            android:id="@+id/editdeletejob_delete_btn"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_red"
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="DELETE JOB"
+            app:layout_constraintEnd_toEndOf="@+id/editdeletejob_edit_btn"
+            app:layout_constraintStart_toStartOf="@+id/editdeletejob_edit_btn"
+            app:layout_constraintTop_toBottomOf="@+id/editdeletejob_edit_btn" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
